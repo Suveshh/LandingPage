@@ -372,22 +372,22 @@ nav ul a:hover:after {
   }
   .swapper {
     right: 22%;
-    top: 25%;
+    top: 24%;
   }
   .swiper {
     left: 30%;
-    top: 45%;
+    top: 43%;
   }
   .right {
     display: flex;
     align-items: center;
-    top: 86%;
+    top: 84%;
   }
   .image {
     background-color: #494234;
   }
   .social-links {
-    bottom: 1%;
+    bottom: 1.5%;
     right: 25%;
   }
 }
