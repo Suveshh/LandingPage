@@ -287,7 +287,7 @@ nav ul a:hover:after {
     top: 7%;
   }
   .right {
-    top: 15%;
+    top: 14%;
   }
   .main-text {
     position: absolute;
@@ -322,6 +322,9 @@ nav ul a:hover:after {
 @media screen and (max-width: 890px) {
   .social-links::before {
     display: none;
+  }
+  .right {
+    top: 13%;
   }
 }
 @media screen and (max-width: 746px) {
@@ -365,16 +368,20 @@ nav ul a:hover:after {
 @media screen and (max-width: 546px) {
   .main-text {
     left: 50%;
+    top: 10%;
   }
   .swapper {
     right: 22%;
+    top: 25%;
   }
   .swiper {
     left: 30%;
+    top: 45%;
   }
   .right {
     display: flex;
-    top: 87%;
+    align-items: center;
+    top: 86%;
   }
   .image {
     background-color: #494234;
@@ -382,6 +389,36 @@ nav ul a:hover:after {
   .social-links {
     bottom: 1%;
     right: 25%;
+  }
+}
+@media screen and (max-width: 543px) {
+  .swapper {
+    right: 20%;
+  }
+  .right {
+    right: 21%;
+  }
+  .social-links {
+    right: 32%;
+  }
+}
+@media screen and (max-width: 477px) {
+  .swapper {
+    right: 15%;
+  }
+  .right {
+    right: 15%;
+  }
+  .social-links {
+    right: 28%;
+  }
+}
+@media screen and (max-width: 437px) {
+  .swapper {
+    right: 13%;
+  }
+  .right {
+    right: 12%;
   }
 }
 @media screen and (max-width: 426px) {
@@ -392,37 +429,53 @@ nav ul a:hover:after {
     left: 25%;
   }
   .right {
-    left: 20%;
+    justify-content: center;
   }
   .social-links {
     right: 25%;
   }
 }
+@media screen and (max-width: 394px) {
+  .swapper {
+    right: 10%;
+  }
+  .right {
+    right: 8%;
+  }
+}
 @media screen and (max-width: 376px) {
   .swapper {
-    right: 11%;
+    right: 10%;
   }
   .swiper {
     left: 22%;
   }
   .right {
-    left: 15%;
+    right: 8%;
   }
   .social-links {
     right: 23%;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 358px) {
   .swapper {
-    right: 3%;
-  }
-  .swiper {
-    left: 19%;
+    right: 5%;
   }
   .right {
-    left: 9%;
+    right: 7%;
   }
   .social-links {
-    right: 18%;
+    right: 25%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .swiper {
+    left: 16%;
+  }
+  .right {
+    right: 3%;
+  }
+  .social-links {
+    right: 22%;
   }
 }
