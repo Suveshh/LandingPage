@@ -12,6 +12,7 @@
   background: linear-gradient(to right, #93c572 70%, #c8ebb1 30%);
   position: relative;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
 .wave {
   position: absolute;
@@ -265,6 +266,7 @@ nav ul a:hover:after {
   background-color: #4b6934f3;
   display: none;
   z-index: 1000;
+  transition: transform 0.5s ease;
 }
 .Resp ul {
   list-style-type: none;
