@@ -513,3 +513,7 @@ nav ul a:hover:after {
     margin-left: 7px;
   }
 }
+.fa-left-long:before {
+  background-color: #4b6934f3;
+  border: 3px solid #4b6934f3;
+}
