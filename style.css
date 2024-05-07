@@ -12,12 +12,13 @@
   background: linear-gradient(to right, #93c572 70%, #c8ebb1 30%);
   position: relative;
   overflow: hidden;
-  transition: transform 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .wave {
   position: absolute;
   top: 0;
   right: 30%;
+  transition: all ease-in-out 0.5s;
 }
 nav {
   width: 90%;
@@ -26,10 +27,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all ease-in-out 0.5s;
 }
 nav ul {
   display: flex;
   list-style-type: none;
+  transition: all ease-in-out 0.5s;
 }
 nav ul li {
   margin: 0 5px;
@@ -63,17 +66,19 @@ nav ul a:hover:after {
   justify-content: start;
   margin-left: 80px;
   margin-top: 50px;
+  transition: all ease-in-out 0.5s;
 }
 .swapper .icon {
   height: 70px;
   width: 70px;
   margin: 30px;
+  transition: all ease-in-out 0.5s;
 }
 .icon img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease-out;
+  transition: all ease-in-out 0.5s;
 }
 .icon :hover {
   transform: translateY(-15px);
@@ -86,13 +91,16 @@ nav ul a:hover:after {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  transition: all ease-in-out 0.5s;
 }
 .image-apple,
 .main-text {
   flex-basis: 50%;
+  transition: all ease-in-out 0.5s;
 }
 .image-apple img {
   width: 100%;
+  transition: all ease-in-out 0.5s;
 }
 .main-content h1 {
   font-size: 60px;
@@ -117,21 +125,29 @@ nav ul a:hover:after {
 }
 .swiper {
   width: 20rem;
+  transition: all ease-in-out 0.5s;
+}
+#mySwiper {
+  transition: all ease-in-out 0.5s !important;
 }
 .swiper img {
+  transition: all ease-in-out 0.5s;
   margin-left: 70px;
 }
 .right {
   position: absolute;
   right: 6%;
   bottom: 20%;
+  transition: all ease-in-out 0.5s;
 }
 .box {
   display: flex;
   align-items: center;
+  transition: all ease-in-out 0.5s;
 }
 .right .box .image img {
   width: 70%;
+  transition: all ease-in-out 0.5s;
 }
 .image {
   margin-top: 2rem;
@@ -142,7 +158,7 @@ nav ul a:hover:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 .image:hover {
   background-color: rgba(73, 66, 52, 0.7);
@@ -158,6 +174,7 @@ nav ul a:hover:after {
   position: absolute;
   right: 5%;
   bottom: 5%;
+  transition: all ease-in-out 0.5s;
 }
 .social-links::before {
   content: "";
@@ -167,6 +184,7 @@ nav ul a:hover:after {
   top: 42%;
   left: -150px;
   background-color: #494234;
+  transition: all ease-in-out 0.5s;
 }
 .social-links i {
   margin-left: 10px;
@@ -178,9 +196,42 @@ nav ul a:hover:after {
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 .social-links i:hover {
   transform: translateY(-9px);
+  transition: all ease-in-out 0.5s;
+}
+.Resp {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 40%;
+  justify-content: center;
+  background-color: #4b6934f3;
+  display: none;
+  z-index: 1000;
+  transition: all ease-in-out 0.5s;
+}
+.Resp ul {
+  list-style-type: none;
+  margin-left: 30px;
+  transition: all ease-in-out 0.5s;
+}
+.Resp li {
+  margin: 30px;
+  transition: all ease-in-out 0.5s;
+}
+.Resp li a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f9f9f9;
+  transition: all ease-in-out 0.5s;
+}
+.fa-bars {
+  display: none;
+  transition: all ease-in-out 0.5s;
 }
 @media screen and (max-width: 1500px) {
   .main-text h1 {
@@ -257,30 +308,6 @@ nav ul a:hover:after {
     margin-left: 10px;
   }
 }
-.Resp {
-  position: absolute;
-  display: flex;
-  height: 100%;
-  width: 40%;
-  justify-content: center;
-  background-color: #4b6934f3;
-  display: none;
-  z-index: 1000;
-  transition: transform 0.5s ease;
-}
-.Resp ul {
-  list-style-type: none;
-  margin-left: 30px;
-}
-.Resp li {
-  margin: 30px;
-}
-.Resp li a {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 18px;
-  color: #f9f9f9;
-}
 @media screen and (max-width: 900px) {
   .swapper {
     flex-direction: column;
@@ -303,10 +330,6 @@ nav ul a:hover:after {
     display: none;
   }
 }
-.fa-bars {
-  display: none;
-}
-
 @media screen and (max-width: 940px) {
   .fa-bars {
     display: block;
@@ -383,13 +406,13 @@ nav ul a:hover:after {
   .right {
     display: flex;
     align-items: center;
-    top: 84%;
+    top: 86%;
   }
   .image {
     background-color: #494234;
   }
   .social-links {
-    bottom: 1.5%;
+    bottom: 0%;
     right: 25%;
   }
 }
